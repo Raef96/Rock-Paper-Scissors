@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Rock-Paper-Scissors</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="static/style.css" />
+  </head>
+  <body>
+    <h1 style="text-align: center">Hello Raef</h1>
+    <h3 style="text-align: center">Let's have some fun</h3>
+    <div id="k">
+      <div class="container-3" id="play">
+        <h2>Rock Paper Scissors</h2>
+        <div class="flex-box-rps" id="flex-box-rps-div">
+          <img
+            id="rock"
+            src="static/rock.png"
+            height="150"
+            width="150"
+            alt=""
+            onClick="rpsGame(this)"
+          />
+          <img
+            id="paper"
+            src="static/paper.png"
+            height="150"
+            width="150"
+            alt=""
+            onClick="rpsGame(this)"
+          />
+          <img
+            id="scissors"
+            src="static/scissors.png"
+            height="150"
+            width="150"
+            alt=""
+            onClick="rpsGame(this)"
+          />
+        </div>
+        <div>
+          <button
+            type="button"
+            class="btn btn-primary"
+            id="resetbtn"
+            onClick="history.go(0)"
+          >
+            Play again
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
